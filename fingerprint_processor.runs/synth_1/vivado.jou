@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Jul 14 01:10:30 2025
+# Process ID         : 7376
+# Current directory  : C:/Users/kound/fingerprint_processor/fingerprint_processor.runs/synth_1
+# Command line       : vivado.exe -log fingerprint_processor_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fingerprint_processor_top.tcl
+# Log file           : C:/Users/kound/fingerprint_processor/fingerprint_processor.runs/synth_1/fingerprint_processor_top.vds
+# Journal file       : C:/Users/kound/fingerprint_processor/fingerprint_processor.runs/synth_1\vivado.jou
+# Running On         : sk
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 25524 MB
+# Swap memory        : 4160 MB
+# Total Virtual      : 29685 MB
+# Available Virtual  : 5990 MB
+#-----------------------------------------------------------
+source fingerprint_processor_top.tcl -notrace

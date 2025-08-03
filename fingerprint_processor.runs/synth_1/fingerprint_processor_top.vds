@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Jul 14 01:10:30 2025
+# Process ID         : 7376
+# Current directory  : C:/Users/kound/fingerprint_processor/fingerprint_processor.runs/synth_1
+# Command line       : vivado.exe -log fingerprint_processor_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fingerprint_processor_top.tcl
+# Log file           : C:/Users/kound/fingerprint_processor/fingerprint_processor.runs/synth_1/fingerprint_processor_top.vds
+# Journal file       : C:/Users/kound/fingerprint_processor/fingerprint_processor.runs/synth_1\vivado.jou
+# Running On         : sk
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 25524 MB
+# Swap memory        : 4160 MB
+# Total Virtual      : 29685 MB
+# Available Virtual  : 5990 MB
+#-----------------------------------------------------------
+source fingerprint_processor_top.tcl -notrace
+Command: synth_design -top fingerprint_processor_top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14424
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 845.609 ; gain = 476.008
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-9917] port 'pixel_line' must not be declared to be an array [C:/Users/kound/fingerprint_processor/fingerprint_processor.srcs/sources_1/new/binarisation.v:26]
+ERROR: [Synth 8-8960] 'mvcu_inputs' needs 2 dimensions [C:/Users/kound/fingerprint_processor/fingerprint_processor.srcs/sources_1/new/binarisation.v:63]
+INFO: [Synth 8-10285] module 'binarization_stage' is ignored due to previous errors [C:/Users/kound/fingerprint_processor/fingerprint_processor.srcs/sources_1/new/binarisation.v:187]
+INFO: [Synth 8-9084] Verilog file 'C:/Users/kound/fingerprint_processor/fingerprint_processor.srcs/sources_1/new/binarisation.v' ignored due to errors
+ERROR: [Synth 8-12188] Failed to read verilog 'C:/Users/kound/fingerprint_processor/fingerprint_processor.srcs/sources_1/new/binarisation.v'
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 944.738 ; gain = 575.137
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+7 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 14 01:10:49 2025...
